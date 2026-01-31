@@ -18,7 +18,7 @@ Hosting services behind **Cloudflare** offers significant protection. To further
 
 ![ECH Check](ech.png)
 
-However, implementing ECH reliably on mobile clients (specifically **Exclave**, which utilizes V2Ray/Xray cores) presents a dilemma:
+However, implementing ECH reliably on mobile clients (specifically **Exclave For Android**, which utilizes V2Ray/Xray cores) presents a dilemma:
 
 1.  **Key Rotation**: To ensure forward secrecy, Cloudflare rotates its ECH Configs (Public Keys) frequently (often hourly).
 2.  **Static Configuration Requirement**: Exclave supports advanced transport protocols (VMess + WebSocket + mTLS + Mux + XUDP). To enable these features simultaneously, the client relies on a rigid binary configuration (Protobuf) or specific JSON structure.
